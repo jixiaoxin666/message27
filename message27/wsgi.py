@@ -1,5 +1,5 @@
 """
-WSGI config for muxue27 project.
+WSGI config for message27 project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault("DJANGO_SETTINGS_MODULE", "muxue27.settings")
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "message27.settings")
 
 application = get_wsgi_application()

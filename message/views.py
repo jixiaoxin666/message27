@@ -6,7 +6,7 @@ from message.models import UserMessage
 # Create your views here.
 
 
-# 显示留言板
+# 显示留言板信息第一条
 # jihuixin
 # 2018-3-11
 def get_form(request):
