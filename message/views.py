@@ -6,6 +6,9 @@ from message.models import UserMessage
 # Create your views here.
 
 
+# 显示留言板
+# jihuixin
+# 2018-3-11
 def get_form(request):
     user_manages = UserMessage.objects.all()
     if user_manages:
