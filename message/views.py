@@ -2,9 +2,12 @@
 from __future__ import unicode_literals
 
 from django.shortcuts import render
-
+from message.models import UserMessage
 # Create your views here.
 
 
 def get_form(request):
-    return render(request, 'message_form.html')
+    user_manages = UserMessage.objects.all()
+    if user_manages:
+        user_manage = user_manages[0]
+    return render(request, 'message_form.html', {'user_manage': user_manage})
